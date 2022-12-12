@@ -1,0 +1,10 @@
+﻿<div class="text-center">
+    <h1>Welcome!</h1>
+    @model RichSessionWorkshop.Models.NameInput
+    <form action="/process" method="post">
+        <label asp-for="Username"></label>
+        <input asp-for="Username">
+        <span asp-validation-for="Username"></span>
+        <button type="submit">Submit</button>
+    </form>
+</div>
